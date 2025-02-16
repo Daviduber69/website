@@ -21,8 +21,7 @@ export const About = () => {
                         I find programming and various computer work very fun and interesting, so I am very engaged in
                         learning more.
                         I want to work with this because it is very satisfying to create applications and solve
-                        technical
-                        problems
+                        technical problems
                     </p>
                 </>
                 ) : (

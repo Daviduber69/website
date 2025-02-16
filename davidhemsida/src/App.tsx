@@ -6,7 +6,6 @@ import {Home} from "./Home.tsx";
 
 import {CV} from "./CV.tsx";
 import {LanguageProvider} from "./LanguageProvider.tsx";
-import ParticlesBackground from "./ParticlesBackground.tsx";
 
 function App() {
 
