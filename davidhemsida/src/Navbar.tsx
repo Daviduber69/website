@@ -1,6 +1,6 @@
 import {Link} from "react-router-dom";
 import { useLanguage } from "./LanguageProvider.tsx";
-import {useState} from "react";
+import React, {useState} from "react";
 
 export const Navbar = () => {
     const { selectedLanguage, setSelectedLanguage } = useLanguage();
@@ -8,7 +8,7 @@ export const Navbar = () => {
 const toggleDropDown = () => {
     setSelected((prev) => !prev);
 }
-const handleLanguageChange = (e) => {
+const handleLanguageChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
     setSelectedLanguage(e.target.value);
     setSelected(false);
 }

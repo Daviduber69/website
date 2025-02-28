@@ -1,9 +1,10 @@
 import {Particles} from "react-tsparticles"
 import { loadFull } from "tsparticles"
 import { useCallback } from "react"
+import {Container, Engine} from "tsparticles-engine";
 
 const ParticlesBackground = () => {
-    const particlesInit = useCallback(async (engine) => {
+    const particlesInit = useCallback(async (engine: Engine) => {
         // Log the engine object to check its structure
         console.log("Initializing particles engine:", engine);
 
@@ -16,7 +17,7 @@ const ParticlesBackground = () => {
         }
     }, []);
 
-    const particlesLoaded = useCallback(async container => {
+    const particlesLoaded = useCallback(async (container: Container | undefined) => {
         await console.log(container);
     }, []);
 
@@ -66,7 +67,7 @@ const ParticlesBackground = () => {
                         enable: true,
                     },
                     move: {
-                        directions: "none",
+                        direction: "none",
                         enable: true,
                         outModes: {
                             default: "bounce",

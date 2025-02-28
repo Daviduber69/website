@@ -1,20 +1,24 @@
 import { Tooltip } from 'react-tooltip';
 import {useLanguage} from "./LanguageProvider.tsx";
+import {ReactNode} from "react";
 
-export const TooltipComponent = ({children}) => {
+interface TooltipComponentProps{
+    children: ReactNode;
+    onClick: () => void;
+}
+
+export const TooltipComponent = ({children, onClick}: TooltipComponentProps) => {
     const { selectedLanguage } = useLanguage();
 
     return(
         <>
-            {selectedLanguage === 'English' ? (
-                <a className="tooltip-a" data-tooltip-id="myTooltip" data-tooltip-content="Download Resume" data-tooltip-place="top">
+                <a className="tooltip-a" data-tooltip-id="myTooltip"
+                   onClick={onClick}
+                   data-tooltip-content={selectedLanguage === 'English' ?"Download Resume" : "Ladda ner CV"}
+                   data-tooltip-place="top">
                     {children}
                 </a>
-            ): (
-                <a className="tooltip-a" data-tooltip-id="myTooltip" data-tooltip-content="Ladda ner CV" data-tooltip-place="top">
-                    {children}
-                </a>
-            )}
+
 
             <Tooltip id="myTooltip"/>
         </>
