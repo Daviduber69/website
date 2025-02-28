@@ -6,7 +6,7 @@ export const About = () => {
 
     return (
         <>
-            <img src="src/assets/jagbnw.jpg" alt="dave"/>
+            <img src="jagbnw.jpg" alt="dave"/>
             <br/>
             <h2>David Henriksson</h2>
             <p>havid.denriksson94@gmail.com</p>
