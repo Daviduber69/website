@@ -1,9 +1,8 @@
-import {BrowserRouter as Router, Routes, Route, CookieParseOptions} from "react-router-dom";
+import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
 
 import './App.css'
 import {Navbar} from "./Navbar.tsx";
 import {Home} from "./Home.tsx";
-
 import {CV} from "./CV.tsx";
 import {LanguageProvider} from "./LanguageProvider.tsx";
 

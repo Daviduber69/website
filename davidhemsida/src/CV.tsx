@@ -1,5 +1,6 @@
 import {useState} from "react";
 import {useLanguage} from "./LanguageProvider.tsx";
+import {TooltipComponent} from "./TooltipComponent.tsx";
 
 export const CV = () => {
     const [selected, setSelected] = useState<{ [key: string]: boolean }>({});
@@ -39,14 +40,15 @@ export const CV = () => {
                         <button className={selected["misc"] ? "active" : ""} onClick={() => handleClick("misc")}>
                             <p style={{fontWeight: 'bold'}}>Miscellaneous</p>
                         </button>
-                        <button onClick={handleDownload}><img src="downloadcv.png" alt="downloadcv"
-                                                              className="downloadbutton"/></button>
+                        <TooltipComponent onClick={handleDownload}>
+                            <img src="downloadcv.png" alt="downloadcv" className="downloadbutton"/>
+                        </TooltipComponent>
                     </div>
 
                     <div className="cv-navbar-content">
                         {selected["comp"] && (
                             <div>
-                                <h3>COMPETENCE</h3>
+                            <h3>COMPETENCE</h3>
                                 <p style={{fontWeight: 'bold'}}>Operating system:</p>
                                 <p className="p-pop-out">Windows, WSL, (Linux)</p>
                                 <p style={{fontWeight: 'bold'}}>Programming languages:</p>
@@ -144,7 +146,7 @@ export const CV = () => {
                                     I have a Category B driver's license and a TLP10 A-B forklift license.
 
                                 </p>
-                                havid.denriksson94@gmail.com
+                                d.henriksson1994@gmail.com
                             </div>
                         )}
                     </div>
@@ -170,8 +172,9 @@ export const CV = () => {
                         <button className={selected["misc"] ? "active" : ""} onClick={() => handleClick("misc")}>
                             <p style={{fontWeight: 'bold'}}>Övrigt</p>
                         </button>
-                        <button onClick={handleDownload}><img src="downloadcv.png" alt="Ladda ner CV"
-                                                              className="downloadbutton"/></button>
+                        <TooltipComponent onClick={handleDownload}>
+                                <img src="downloadcv.png" alt="downloadcv" className="downloadbutton"/>
+                        </TooltipComponent>
                     </div>
 
                     <div className="cv-navbar-content">
@@ -266,7 +269,7 @@ export const CV = () => {
                                 <p>
                                     Jag har B-körkort samt truckkort TLP10 A-B.
                                 </p>
-                                havid.denriksson94@gmail.com
+                                d.henriksson1994@gmail.com
                             </div>
                         )}
                     </div>
