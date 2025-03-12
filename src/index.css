@@ -203,32 +203,39 @@ button:focus-visible {
     left: 0;
     z-index: -1;
 }
+
 @media (prefers-color-scheme: light) {
-    :root {
-        color: #213547;
-        background-color: #ffffff;
-    }
-
-    a:hover {
-        color: #747bff;
-    }
-
     button {
-        background-color: #f9f9f9;
+        color: #ffffff;
+
     }
 
+    button:hover {
+        border-color: #13ff00;
+
+    }
+
+    button:focus,
+    button:focus-visible {
+        outline: 4px auto -webkit-focus-ring-color;
+    }
+
+    .cv-navbar-buttons button.active {
+        background: green;
+        color: white;
+    }
 }
+
 @media (max-width: 768px) {
-    /* Navbar Menu Adjustments */
     .navbar-menu {
-        position: fixed; /* Fix it to the top */
+        position: fixed;
         top: 0;
         left: 0;
         width: 100%;
-        height: auto; /* Let it size to content */
-        padding: 5px 0; /* Reduce padding */
-        background-color: #333; /* Keep the background */
-        z-index: 1000; /* Ensure it stays on top */
+        height: auto;
+        padding: 5px 0;
+        background-color: #333;
+        z-index: 1000;
     }
 
     .navbar-menu nav {
@@ -237,7 +244,7 @@ button:focus-visible {
 
     .navbar-menu ul {
         display: flex;
-        flex-direction: row; /* Already set, keeping it */
+        flex-direction: row;
         justify-content: center;
         width: 100%;
         margin: 0;
@@ -245,25 +252,25 @@ button:focus-visible {
     }
 
     .navbar-menu ul li {
-        margin: 0 5px; /* Tighten spacing */
+        margin: 0 5px;
     }
 
     .navbar-menu ul li a {
-        font-size: 14px; /* Smaller text (from 16px) */
-        padding: 6px 10px; /* Reduced padding (from 8px) */
-        width: auto; /* Remove fixed width */
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Lighter shadow */
+        font-size: 14px;
+        padding: 6px 10px;
+        width: auto;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
         text-align: center;
     }
 
     .navbar-menu ul li a:hover {
-        transform: scale(1.05); /* Slightly smaller hover effect */
+        transform: scale(1.05);
         transition: all 0.15s ease-in-out;
     }
 
-    /* Push content below the navbar */
+
     .content {
-        margin-top: 60px; /* Add space for the navbar height */
+        margin-top: 60px;
         width: 100%;
         max-width: 100%;
         padding: 10px;
@@ -273,7 +280,6 @@ button:focus-visible {
         text-align: left;
     }
 
-    /* Keep CV adjustments intact */
     .cv-navbar {
         position: static;
         width: 100%;
@@ -282,30 +288,30 @@ button:focus-visible {
         padding: 10px;
         display: flex;
         flex-direction: column;
-        margin-top: 60px; /* Space for navbar-menu */
-        min-height: auto; /* Prevent excessive height */
+        margin-top: 60px;
+        min-height: auto;
     }
 
     .cv-navbar-buttons {
         width: 100%;
         display: flex;
-        flex-direction: column; /* Keep vertical stack */
+        flex-direction: column;
         align-items: center;
-        margin-bottom: 10px; /* Reduced spacing to tighten layout */
-        padding: 0; /* Remove extra padding */
+        margin-bottom: 10px;
+        padding: 0;
     }
 
     .cv-navbar-buttons button {
-        width: 70%; /* Reduced from 80% to make smaller */
-        font-size: 12px; /* Smaller text (from 14px) */
-        padding: 6px; /* Reduced from 8px */
-        margin: 3px 0; /* Tighter vertical spacing (from 5px) */
-        min-height: 0; /* Prevent buttons from being too tall */
+        width: 70%;
+        font-size: 12px;
+        padding: 6px;
+        margin: 3px 0;
+        min-height: 0;
     }
 
-    /* Download button (assuming it’s the TooltipComponent) */
+
     .cv-navbar-buttons .downloadbutton {
-        width: 30px; /* Smaller size for the icon */
+        width: 30px;
         height: 30px;
         margin: 3px auto;
     }
@@ -319,8 +325,8 @@ button:focus-visible {
         margin: 0 auto;
         font-size: 14px;
         line-height: 1.3;
-        background-color: #1a1a1a; /* Match button bg for clarity */
-        border-radius: 8px; /* Optional: visual separation */
+        background-color: #1a1a1a;
+        border-radius: 8px;
     }
 
     .cv-navbar-content h3 {
