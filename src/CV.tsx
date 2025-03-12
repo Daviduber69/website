@@ -13,7 +13,7 @@ export const CV = () => {
     }
     const handleDownload = () => {
         const link = document.createElement("a");
-        link.href = "/files/DavidHenriksson_CV.pdf";
+        link.href = "/website/files/DavidHenriksson_CV.pdf";
         link.download = "DavidHenriksson_CV.pdf";
         link.click();
     }
@@ -52,7 +52,7 @@ export const CV = () => {
                                 <p style={{fontWeight: 'bold'}}>Operating system:</p>
                                 <p className="p-pop-out">Windows, WSL, (Linux)</p>
                                 <p style={{fontWeight: 'bold'}}>Programming languages:</p>
-                                Java, JavaScript, HTML/CSS, PHP
+                                Java, JavaScript, HTML/CSS
                                 <p style={{fontWeight: 'bold'}}>Libraries/Frameworks:</p>
                                 <p className="p-pop-out">TypeScript, Vue, React, JUnit</p>
                                 <p style={{fontWeight: 'bold'}}>Tools:</p>
@@ -60,7 +60,7 @@ export const CV = () => {
                                     Studio
                                     Code, Eclipse</p>
                                 <p style={{fontWeight: 'bold'}}>Databases:</p>
-                                <p className="p-pop-out"> SQL, MySQL, MongoDB, SQL Server, SQLite, Postgres</p>
+                                <p className="p-pop-out"> SQL, MySQL, MongoDB, SQL Server, SQLite, PostgreSQL</p>
                                 <p style={{fontWeight: 'bold'}}>Work methods:</p>
                                 <p className="p-pop-out"> Agile methods, Scrum, Kanban</p>
                             </div>
@@ -184,7 +184,7 @@ export const CV = () => {
                                 <p style={{fontWeight: 'bold'}}>Operativsystem:</p>
                                 <p className="p-pop-out">Windows, WSL, (Linux)</p>
                                 <p style={{fontWeight: 'bold'}}>Programmeringsspråk:</p>
-                                Java, JavaScript, HTML/CSS, PHP
+                                Java, JavaScript, HTML/CSS
                                 <p style={{fontWeight: 'bold'}}>Bibliotek/Ramverk:</p>
                                 <p className="p-pop-out">TypeScript, Vue, React, JUnit</p>
                                 <p style={{fontWeight: 'bold'}}>Verktyg:</p>
@@ -192,7 +192,7 @@ export const CV = () => {
                                     Studio
                                     Code, Eclipse</p>
                                 <p style={{fontWeight: 'bold'}}>Databaser:</p>
-                                <p className="p-pop-out">SQL, MySQL, MongoDB, SQL Server, SQLite, Postgres</p>
+                                <p className="p-pop-out">SQL, MySQL, MongoDB, SQL Server, SQLite, PostgreSQL</p>
                                 <p style={{fontWeight: 'bold'}}>Arbetsmetoder:</p>
                                 <p className="p-pop-out">Agila metoder, Scrum, Kanban</p>
                             </div>

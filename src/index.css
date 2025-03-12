@@ -218,3 +218,126 @@ button:focus-visible {
     }
 
 }
+@media (max-width: 768px) {
+    /* Navbar Menu Adjustments */
+    .navbar-menu {
+        position: fixed; /* Fix it to the top */
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: auto; /* Let it size to content */
+        padding: 5px 0; /* Reduce padding */
+        background-color: #333; /* Keep the background */
+        z-index: 1000; /* Ensure it stays on top */
+    }
+
+    .navbar-menu nav {
+        width: 100%;
+    }
+
+    .navbar-menu ul {
+        display: flex;
+        flex-direction: row; /* Already set, keeping it */
+        justify-content: center;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .navbar-menu ul li {
+        margin: 0 5px; /* Tighten spacing */
+    }
+
+    .navbar-menu ul li a {
+        font-size: 14px; /* Smaller text (from 16px) */
+        padding: 6px 10px; /* Reduced padding (from 8px) */
+        width: auto; /* Remove fixed width */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Lighter shadow */
+        text-align: center;
+    }
+
+    .navbar-menu ul li a:hover {
+        transform: scale(1.05); /* Slightly smaller hover effect */
+        transition: all 0.15s ease-in-out;
+    }
+
+    /* Push content below the navbar */
+    .content {
+        margin-top: 60px; /* Add space for the navbar height */
+        width: 100%;
+        max-width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+        overflow-x: hidden;
+        word-wrap: break-word;
+        text-align: left;
+    }
+
+    /* Keep CV adjustments intact */
+    .cv-navbar {
+        position: static;
+        width: 100%;
+        text-align: center;
+        align-items: center;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        margin-top: 60px; /* Space for navbar-menu */
+        min-height: auto; /* Prevent excessive height */
+    }
+
+    .cv-navbar-buttons {
+        width: 100%;
+        display: flex;
+        flex-direction: column; /* Keep vertical stack */
+        align-items: center;
+        margin-bottom: 10px; /* Reduced spacing to tighten layout */
+        padding: 0; /* Remove extra padding */
+    }
+
+    .cv-navbar-buttons button {
+        width: 70%; /* Reduced from 80% to make smaller */
+        font-size: 12px; /* Smaller text (from 14px) */
+        padding: 6px; /* Reduced from 8px */
+        margin: 3px 0; /* Tighter vertical spacing (from 5px) */
+        min-height: 0; /* Prevent buttons from being too tall */
+    }
+
+    /* Download button (assuming it’s the TooltipComponent) */
+    .cv-navbar-buttons .downloadbutton {
+        width: 30px; /* Smaller size for the icon */
+        height: 30px;
+        margin: 3px auto;
+    }
+
+    .cv-navbar-content {
+        position: static;
+        width: 95%;
+        padding: 10px;
+        transform: none;
+        max-height: none;
+        margin: 0 auto;
+        font-size: 14px;
+        line-height: 1.3;
+        background-color: #1a1a1a; /* Match button bg for clarity */
+        border-radius: 8px; /* Optional: visual separation */
+    }
+
+    .cv-navbar-content h3 {
+        font-size: 1.2em;
+        margin: 10px 0;
+    }
+
+    .cv-navbar-content p {
+        width: 100%;
+        max-width: 100%;
+        margin: 5px 0;
+        padding: 0 5px;
+        box-sizing: border-box;
+        word-break: break-word;
+    }
+
+    .cv-navbar-content a {
+        font-size: 14px;
+    }
+}
