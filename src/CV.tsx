@@ -48,17 +48,15 @@ export const CV = () => {
                     <div className="cv-navbar-content">
                         {selected["comp"] && (
                             <div>
-                            <h3>COMPETENCE</h3>
+                                <h3>COMPETENCE</h3>
                                 <p style={{fontWeight: 'bold'}}>Operating system:</p>
                                 <p className="p-pop-out">Windows, WSL, (Linux)</p>
                                 <p style={{fontWeight: 'bold'}}>Programming languages:</p>
                                 Java, JavaScript, HTML/CSS
                                 <p style={{fontWeight: 'bold'}}>Libraries/Frameworks:</p>
-                                <p className="p-pop-out">TypeScript, Vue, React, JUnit</p>
+                                <p className="p-pop-out">TypeScript, Vue, React, JUnit, Spring, Spring Boot</p>
                                 <p style={{fontWeight: 'bold'}}>Tools:</p>
-                                <p className="p-pop-out">IntelliJ, Docker, Jenkins, Bash, Git, Maven, Gradle, Visual
-                                    Studio
-                                    Code, Eclipse</p>
+                                <p className="p-pop-out">Docker, Jenkins, Bash, Git, Maven, Gradle</p>
                                 <p style={{fontWeight: 'bold'}}>Databases:</p>
                                 <p className="p-pop-out"> SQL, MySQL, MongoDB, SQL Server, SQLite, PostgreSQL</p>
                                 <p style={{fontWeight: 'bold'}}>Work methods:</p>
@@ -173,7 +171,7 @@ export const CV = () => {
                             <p style={{fontWeight: 'bold'}}>Övrigt</p>
                         </button>
                         <TooltipComponent onClick={handleDownload}>
-                                <img src="downloadcv.png" alt="downloadcv" className="downloadbutton"/>
+                            <img src="downloadcv.png" alt="downloadcv" className="downloadbutton"/>
                         </TooltipComponent>
                     </div>
 
@@ -186,11 +184,9 @@ export const CV = () => {
                                 <p style={{fontWeight: 'bold'}}>Programmeringsspråk:</p>
                                 Java, JavaScript, HTML/CSS
                                 <p style={{fontWeight: 'bold'}}>Bibliotek/Ramverk:</p>
-                                <p className="p-pop-out">TypeScript, Vue, React, JUnit</p>
-                                <p style={{fontWeight: 'bold'}}>Verktyg:</p>
-                                <p className="p-pop-out">IntelliJ, Docker, Jenkins, Bash, Git, Maven, Gradle, Visual
-                                    Studio
-                                    Code, Eclipse</p>
+                                <p className="p-pop-out">TypeScript, Vue, React, JUnit, Spring, Spring Boot</p>
+                                <p style={{fontWeight: 'bold'}}>Tools:</p>
+                                <p className="p-pop-out">Docker, Jenkins, Bash, Git, Maven, Gradle</p>
                                 <p style={{fontWeight: 'bold'}}>Databaser:</p>
                                 <p className="p-pop-out">SQL, MySQL, MongoDB, SQL Server, SQLite, PostgreSQL</p>
                                 <p style={{fontWeight: 'bold'}}>Arbetsmetoder:</p>
