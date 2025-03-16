@@ -1,4 +1,4 @@
-import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
+import {BrowserRouter as Router, Routes, Route, HashRouter} from "react-router-dom";
 
 import './App.css'
 import {Navbar} from "./Navbar.tsx";
@@ -11,13 +11,13 @@ function App() {
 
   return (
       <LanguageProvider>
-          <Router basename="/website/">
+          <HashRouter basename="/website/">
               <Navbar />
               <Routes>
                   <Route path="/" element={<Home />} />
               <Route path="/CV" element={<CV />} />
           </Routes>
-      </Router>
+      </HashRouter>
       </LanguageProvider>
   )
 }
