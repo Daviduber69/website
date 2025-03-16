@@ -11,7 +11,7 @@ function App() {
 
   return (
       <LanguageProvider>
-          <Router basename="/website/">
+          <Router basename="/website">
               <Navbar />
               <Routes>
                   <Route path="/" element={<Home />} />
